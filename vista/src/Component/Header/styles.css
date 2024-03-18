@@ -1,0 +1,346 @@
+body {
+    margin: 0;
+    font-family: 'Roboto' ;
+  }
+  .main-div{
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      position: relative;
+      max-width: none;
+      position: relative;
+      max-width: none;
+      padding: 20px 0 0;
+      margin-bottom: 0;
+  }
+  strong{
+    font-weight:350;
+  }
+  .first-div{
+     
+      width: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+  }
+  .first,.second,.third,.fourth{
+    cursor: pointer;
+    /* padding: 4px; */
+  }
+  .search-bar{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 2;
+      /* margin: 0 8px; */
+      /* order: 10; */
+      background-color: #fff;
+      flex-grow: 2 ;
+    
+      /* z-index: 1; */
+  }
+  
+  .search-bar{
+      position: relative;
+      padding: 0 ;
+  } 
+  .search{
+      height: 36px;
+      width: 500px;
+      padding: 5px;
+      text-align: center;
+      font-size: 14px;
+      font-family: "Montserrat";
+      font-weight: 500;
+  }
+  .swan-heading{
+    padding: 10px 10px 0px 10px;
+  }
+  
+  .side-header{
+     width: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap:10px;
+      flex-grow: 1;
+  }
+  .logo-name{
+      font:18px;
+      font-family: sans-serif;
+  }
+  .st0{
+      fill:#006196;
+      height:20px;
+      stroke-width: 2px;
+  }
+  .st1{
+      fill:#2BA8E0
+  }
+  .st2{
+      fill:#6ECFF5;
+  }
+  .header-nav{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 16px;
+  }
+  ul{
+      align-items: stretch;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+  
+  }
+  li{
+      display: inline-block;
+      flex-grow: 1;
+      list-style-type: none;
+      text-align: center;
+      margin-bottom: 1px;
+      padding: 16px 7px 16px;
+      font-size: 14px;;
+      /* line-height: 1.5; */
+  }
+  .li-all{
+          display: inline-block; /* or block */
+          margin-bottom: 5px; /* Adjust as needed */
+          /* width: 85px; */
+          cursor: pointer;
+          border-bottom: 1px solid transparent;
+          font-family: "Montserrat";
+          font-weight: 500;
+  }
+  .li-all:hover{
+      border-bottom: 1px solid black;
+  }
+  .logo-svg{
+      font-size: 20px;
+      height: 41px;
+      padding: 9px;
+      width: 223px;
+      cursor: pointer;
+  }
+  .search-input {
+      position: relative;
+      
+    }
+    .search {
+      padding-right: 30px; /* Adjust the padding to accommodate the button */
+    }
+    
+    .button-img {
+      position: absolute;
+      top: 50%;
+      left: 5px; /* Adjust the right position to suit your design */
+      transform: translateY(-50%);
+      width: 37px;
+      border: 1px solid transparent;
+      background: transparent;
+    }
+    .background{
+      height: 300px;
+      position: relative;
+      width: 100%;
+      background-color: bisque;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .swan-fluid-image{
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 50%;
+      right: 3%;
+      bottom: 50%;
+      display: flex;
+      justify-content: center;
+      border: 1ps solid transparent;
+      border-radius: 15px;
+      transform: translateY(-50%);
+      width:50%;
+      object-fit: right;
+    }
+    .swan-banner-title{
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .swan-banner-description{
+      font-size: 18px;
+     
+    }
+    .swan-button{
+      padding: 20px 70px;
+      font: 18px;
+      text-decoration: none;
+      background: #fff;
+      color: black;
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+      border: 1px solid transparent;
+      border-radius: 50px;
+      margin-top: 10px;
+      position:absolute;
+      box-shadow: 2px 2px 5px whitesmoke;
+    }
+    .swan-banner-text{
+      position: absolute;
+      left: 5%;
+    }
+  
+    .cat-image{
+      border: 1px solid transparent;
+      height: 140px;
+      width: 160px;
+      cursor: pointer;
+    }
+    .categories-images{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      object-fit: cover;
+    }
+  .swan-text-xm1{
+    font-size: small;
+    font-weight: bold;
+    font-family:"Montserrat";
+    display: flex;
+    justify-content: center;
+  
+  }
+  .swan-text-xm1:hover{
+    opacity: 50%;
+  }
+  .cat-image-details{
+    cursor: pointer;
+  }
+  .header-nav {
+    width: 100%; /* You can set a specific width if needed */
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .header-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .header-nav li {
+    display: inline-block;
+    margin-right: 3px; /* Adjust the margin as needed */
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  @font-face {
+    font-family: "Twentieth";
+    src: url("C:\Users\Admin\Twentieth-Century Font");
+  }
+  .new-arr-btn
+  {
+      font-size: 16px;
+      padding: 15px 30px;
+      text-align: center;
+      transition: all 0.5s ease 0s;
+      background-size: 200%;
+      color: white;
+      border-radius: 10px;
+      display: block;
+      border: 0px;
+      font-weight: 700;
+      box-shadow: rgb(240, 152, 25) 0px 0px 14px -7px;
+      background-image: linear-gradient(to right, rgb(130, 19, 158), rgb(32, 0, 112));
+      cursor: pointer;
+      user-select: none;
+      touch-action: manipulation;
+      font-family: "Montserrat";
+  }
+  .new-arr-btn:hover{
+    background-position: center center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  } 
+  .icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 12px;
+    /* padding: 4px; */
+  }
+  /* New CSS*/
+  .search-input {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .search {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button-img {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .button-img svg {
+    width: 20px;
+    height: 20px;
+    fill: #000;
+  }
+  
+  
+  /* Media Query for responsiveness */
+  @media screen and (max-width: 600px) {
+    .search-input {
+      flex-direction: column;
+      align-items: stretch;
+      width: 200px;
+    }
+  
+    .search {
+      margin-top: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    /* Styles for screens up to 576px */
+    .search{
+      width: 30%;
+    }
+  }
+  
+  @media screen and (min-width: 577px) and (max-width: 768px) {
+    /* Styles for screens between 577px and 768px */
+    .search{
+      width: 40%;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+    /* Styles for screens between 769px and 992px */
+    .search{
+      width: 50%;
+    }
+  }
+  @media screen and (min-width: 993px) {
+    /* Styles for screens 993px and larger */
+    .search{
+      width:500px;
+    }
+  }
+  
+  
