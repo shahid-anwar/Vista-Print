@@ -201,9 +201,9 @@ body {
       cursor: pointer;
     }
     .categories-images{
-      display: flex;
+      /* display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: center; */
       padding: 20px;
       object-fit: cover;
     }
@@ -220,6 +220,8 @@ body {
   }
   .cat-image-details{
     cursor: pointer;
+    display: flex;
+    justify-content: center;
   }
   .header-nav {
     width: 100%; /* You can set a specific width if needed */
@@ -263,6 +265,9 @@ body {
       touch-action: manipulation;
       font-family: "Montserrat";
   }
+  .section-div{
+    /* background-color: indigo; */
+  }
   .new-arr-btn:hover{
     background-position: center center;
     color: rgb(255, 255, 255);
@@ -301,7 +306,91 @@ body {
     height: 20px;
     fill: #000;
   }
+ 
+/* Styling for React Slick carousel */
+.categories-images {
+    position: relative; /* Ensure position relative for absolute positioning of buttons */
+  }
   
+  /* Styling for previous and next buttons */
+  .slick-prev,
+  .slick-next {
+    position: absolute; /* Position buttons absolutely */
+    top: 50%; /* Align buttons vertically in the middle */
+    transform: translateY(-50%); /* Adjust vertical position */
+    z-index: 1; /* Ensure buttons appear above slides */
+    background-color: rgba(184, 60, 60, 0.8); /* Background color of buttons */
+    border: none; /* Remove border */
+    color: #185472; /* Text color */
+    width: 40px; /* Width of buttons */
+    height: 40px; /* Height of buttons */
+    border-radius: 50%; /* Make buttons circular */
+    cursor: pointer; /* Cursor style on hover */
+    transition: background-color 0.3s, color 0.3s; /* Transition effect */
+  }
+  .slick-prev::before
+  {
+    padding: 5px 20px 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #006196;
+    color: #ccc;
+    border:1px solid transparent;
+    border-radius: 15px;
+    margin: 10px;
+  }
+  .slick-next::before{
+    padding: 5px 20px 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #006196;
+    color: #ccc;
+    border:1px solid transparent;
+    border-radius: 15px;
+    margin: 10px;
+  }
+  .slick-prev:hover,
+  .slick-next:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Background color on hover */
+    color: #fff; /* Text color on hover */
+  }
+  
+  /* Styling for slide images */
+  .cat-image {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Styling for text overlay */
+  .cat-image-details {
+    position: relative; /* Ensure position relative for absolute positioning of text */
+  }
+  
+  .swan-text-xm1 {
+    position: absolute; /* Position text absolutely */
+    bottom: 10px; /* Adjust vertical position */
+    left: 10px; /* Adjust horizontal position */
+    color: #fff; /* Text color */
+    font-size: 14px; /* Font size */
+    font-weight: bold; /* Font weight */
+    background-color: rgba(0, 0, 0, 0.5); /* Background color of text overlay */
+    padding: 5px 10px; /* Padding around text */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Optional: Disable outline on focus */
+  .slick-prev:focus,
+  .slick-next:focus {
+    outline: none;
+  }
+  .categories-images
+  {
+    width: 92%;
+  }
+
+
   
   /* Media Query for responsiveness */
   @media screen and (max-width: 600px) {

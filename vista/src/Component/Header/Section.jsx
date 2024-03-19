@@ -1,7 +1,18 @@
 import "./styles.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import Slider from "react-slick";
 const Section = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+  };
   return (
-    <div>
+    <div className="section-div">
       <div className="background">
         <div className="swan-banner-text-container">
           <div className="swan-banner-text">
@@ -45,86 +56,112 @@ const Section = () => {
           </h1>
         </div>
         <div className="categories-images">
-          <div className="cat-image-details">
-            <img
-              src="/assets/first-row/1.webp"
-              alt="first-image"
-              className="cat-image"
-            />
-            <div className="swan-text-xm1 swan-font-weight-bold">
-              Visiting Cards
+          <Slider {...settings}>
+            <div className="cat-image-details">
+              <div>
+                <img
+                  src="/assets/first-row/1.webp"
+                  alt="first-image"
+                  className="cat-image"
+                />
+              </div>
+
+              <div className="swan-text-xm1 swan-font-weight-bold">
+                Visiting Cards
+              </div>
             </div>
-          </div>
-          <div className="cat-image-details">
-            <img
-              src="/assets/first-row/2.webp"
-              alt="second-image"
-              className="cat-image"
-            />
-            <div className="swan-text-xm1 swan-font-weight-bold">
-              Clothing & Bags
+            <div className="cat-image-details">
+              <div>
+                <img
+                  src="/assets/first-row/2.webp"
+                  alt="second-image"
+                  className="cat-image"
+                />
+              </div>
+
+              <div className="swan-text-xm1 swan-font-weight-bold">
+                Clothing & Bags
+              </div>
             </div>
-          </div>
-          <div className="cat-image-details">
-            <img
-              src="/assets/first-row/3.webp"
-              alt="third-image"
-              className="cat-image"
-            />
-            <div className="swan-text-xm1 swan-font-weight-bold">
-              Custom Polo T-shirts
+            <div className="cat-image-details">
+              <div>
+                <img
+                  src="/assets/first-row/3.webp"
+                  alt="third-image"
+                  className="cat-image"
+                />
+              </div>
+
+              <div className="swan-text-xm1 swan-font-weight-bold">
+                Custom Polo T-shirts
+              </div>
             </div>
-          </div>
-          <div className="cat-image-details">
-            <img
-              src="/assets/first-row/4.webp"
-              alt="fourth-image"
-              className="cat-image"
-            />
-            <div className="swan-text-xm1 swan-font-weight-bold">
-              Custom T-shirts
+            <div className="cat-image-details">
+              <div>
+                <img
+                  src="/assets/first-row/4.webp"
+                  alt="fourth-image"
+                  className="cat-image"
+                />
+              </div>
+
+              <div className="swan-text-xm1 swan-font-weight-bold">
+                Custom T-shirts
+              </div>
             </div>
-          </div>
-          <div className="cat-image-details">
-            <img
-              src="/assets/first-row/5.webp"
-              alt="fifth-image"
-              className="cat-image"
-            />
-            <div className="swan-text-xm1 swan-font-weight-bold">
-              Custom Caps
+            <div className="cat-image-details">
+              <div>
+                <img
+                  src="/assets/first-row/5.webp"
+                  alt="fifth-image"
+                  className="cat-image"
+                />
+              </div>
+
+              <div className="swan-text-xm1 swan-font-weight-bold">
+                Custom Caps
+              </div>
             </div>
-          </div>
-          <div className="cat-image-details">
-            <img
-              src="/assets/first-row/6.webp"
-              alt="sixth-image"
-              className="cat-image"
-            />
-            <div className="swan-text-xm1 swan-font-weight-bold">
-              Posters & Marketing
+            <div className="cat-image-details">
+              <div>
+                <img
+                  src="/assets/first-row/6.webp"
+                  alt="sixth-image"
+                  className="cat-image"
+                />
+              </div>
+
+              <div className="swan-text-xm1 swan-font-weight-bold">
+                Posters & Marketing
+              </div>
             </div>
-          </div>
-          <div className="cat-image-details">
-            <img
-              src="/assets/first-row/7.webp"
-              alt="seventh-image"
-              className="cat-image"
-            />
-            <div className="swan-text-xm1 swan-font-weight-bold">
-              Stamps & Ink
+            <div className="cat-image-details">
+              <div>
+                <img
+                  src="/assets/first-row/7.webp"
+                  alt="seventh-image"
+                  className="cat-image"
+                />
+              </div>
+
+              <div className="swan-text-xm1 swan-font-weight-bold">
+                Stamps & Ink
+              </div>
             </div>
-          </div>
-          <div className="cat-image-details">
-            <img
-              src="/assets/first-row/8.webp"
-              alt="eighth-image"
-              className="cat-image"
-            />
-            <div className="swan-text-xm1 swan-font-weight-bold">
-              Custom Stationery
+            <div className="cat-image-details">
+              <div>
+                <img
+                  src="/assets/first-row/8.webp"
+                  alt="eighth-image"
+                  className="cat-image"
+                />
+              </div>
+
+              <div className="swan-text-xm1 swan-font-weight-bold">
+                Custom Stationery
+              </div>
             </div>
-          </div>
+          </Slider>
         </div>
       </div>
     </div>
