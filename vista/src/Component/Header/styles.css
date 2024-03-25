@@ -388,7 +388,21 @@ body {
     width: 92%;
   }
 
-
+.popular-cards{
+    cursor: pointer;
+}
+.popular-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0 0 0;
+    font-size: 13px;
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+.material-symbols-outlined{
+    font-size: 20px;
+}
   
   /* Media Query for responsiveness */
   @media screen and (max-width: 600px) {
