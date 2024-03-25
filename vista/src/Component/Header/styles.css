@@ -391,6 +391,10 @@ body {
 .popular-cards{
     cursor: pointer;
 }
+.popular-all-cards{
+    width: 92%;
+    margin-left: 25px;
+}
 .popular-contents{
     display: flex;
     justify-content: center;
