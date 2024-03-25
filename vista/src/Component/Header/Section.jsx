@@ -164,6 +164,77 @@ const Section = () => {
           </Slider>
         </div>
       </div>
+      <div className="popular-products">
+        <div className="title-popular">
+          <h2>Our Most Popular Products</h2>
+        </div>
+        <div className="popular-cards">
+          <div className="image-popular">
+            <img src="assets/second-row/1.webp" height="189px" width="189px" />
+          </div>
+          <div className="popular-contents">
+            <div className="name">Visiting Cards</div>
+            <div className="arrow">
+              <span className="material-symbols-outlined">arrow_forward</span>
+            </div>
+          </div>
+        </div>
+        <div className="popular-cards">
+          <div className="image-popular">
+            <img src="assets/second-row/2.webp" height="189px" width="189px" />
+          </div>
+          <div className="popular-contents">
+            <div className="name">Custom Polo T-shirts</div>
+            <div className="arrow">
+              <span className="material-symbols-outlined">arrow_forward</span>
+            </div>
+          </div>
+        </div>
+        <div className="popular-cards">
+          <div className="image-popular">
+            <img src="assets/second-row/3.webp" height="189px" width="189px" />
+          </div>
+          <div className="popular-contents">
+            <div className="name">Custom T-shirts</div>
+            <div className="arrow">
+              <span className="material-symbols-outlined">arrow_forward</span>
+            </div>
+          </div>
+        </div>
+        <div className="popular-cards">
+          <div className="image-popular">
+            <img src="assets/second-row/4.webp" height="189px" width="189px" />
+          </div>
+          <div className="popular-contents">
+            <div className="name">Custom Stamps & Ink</div>
+            <div className="arrow">
+              <span className="material-symbols-outlined">arrow_forward</span>
+            </div>
+          </div>
+        </div>
+        <div className="popular-cards">
+          <div className="image-popular">
+            <img src="assets/second-row/5.webp" height="189px" width="189px" />
+          </div>
+          <div className="popular-contents">
+            <div className="name">Photo Albums</div>
+            <div className="arrow">
+              <span className="material-symbols-outlined">arrow_forward</span>
+            </div>
+          </div>
+        </div>
+        <div className="popular-cards">
+          <div className="image-popular">
+            <img src="assets/second-row/6.webp" height="189px" width="189px" />
+          </div>
+          <div className="popular-contents">
+            <div className="name">Letterheads</div>
+            <div className="arrow">
+              <span className="material-symbols-outlined">arrow_forward</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
