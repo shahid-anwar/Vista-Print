@@ -312,44 +312,42 @@ body {
     position: relative; /* Ensure position relative for absolute positioning of buttons */
   }
   
-  /* Styling for previous and next buttons */
-  .slick-prev,
-  .slick-next {
-    position: absolute; /* Position buttons absolutely */
-    top: 50%; /* Align buttons vertically in the middle */
-    transform: translateY(-50%); /* Adjust vertical position */
-    z-index: 1; /* Ensure buttons appear above slides */
-    background-color: rgba(184, 60, 60, 0.8); /* Background color of buttons */
-    border: none; /* Remove border */
-    color: #185472; /* Text color */
-    width: 40px; /* Width of buttons */
-    height: 40px; /* Height of buttons */
-    border-radius: 50%; /* Make buttons circular */
-    cursor: pointer; /* Cursor style on hover */
-    transition: background-color 0.3s, color 0.3s; /* Transition effect */
-  }
   .slick-prev::before
   {
-    padding: 5px 20px 5px 20px;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #006196;
-    color: #ccc;
-    border:1px solid transparent;
-    border-radius: 15px;
-    margin: 10px;
+    align-items: center; */
+    position: absolute;
+    top: 40%;
+    height: 64px;
+    width: 64px;
+    z-index: 2;
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+    background-color: #f8f2f2;
+    color: transparent;
+    border:1px solid #dfdfdf;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgb(0,0,0,#dfdfdf);
+    margin: 0;
+    padding: 0;
+    transition: 0.2s ease-all;
+    cursor: pointer;
   }
   .slick-next::before{
     padding: 5px 20px 5px 20px;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     background-color: #006196;
     color: #ccc;
     border:1px solid transparent;
     border-radius: 15px;
     margin: 10px;
+  }
+  .slick-prev::before{
+    background-color: red;
   }
   .slick-prev:hover,
   .slick-next:hover {
